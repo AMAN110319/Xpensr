@@ -1,0 +1,125 @@
+.add-form {
+    border-radius: 50px;
+    background: #86dcdc;
+    box-shadow: 20px 20px 60px #60adac, -20px -20px 60px #82ebe8;
+    margin: 6px 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    min-height: 60vh; 
+}
+.form-item{
+    margin: 12px 0;
+    width: 70%;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: white;
+}
+.form-item label{
+    background-color: lightgray;
+    padding: 2px 12px;
+    border-radius: 0 10px 0 10px;
+    margin-right: 10px;
+}
+.form-item label:hover{
+    background-color: #60adac;
+    font-weight: bolder;
+    color: white;
+}
+.form-item input{
+    font-size:16px;
+    border: none;
+    outline: none;
+    width:70%;
+}
+.category-container-parent{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.category{
+    position:relative;
+    width: 40%;
+}
+.category-dropdown{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-size: 20px;
+    margin: 12px 0;
+    border-radius:6px;
+    padding: 4px;
+}
+.category-dropdown:hover{
+    background-color: #60adac;
+    color: white;
+    font-weight: bold;
+}
+.category-dropdown i{
+    display: flex;
+    align-items: center;
+}
+.category-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width:100%;
+    background-color: white;
+    border-radius: 20px 0px 0px 12px;
+}
+.category-container label{
+    margin-left: 10px;
+    font-weight: bolder;
+}
+.category-item{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+.category-item img{
+    height: 32px;
+    margin-right: 20px;
+}
+.form-add-button{
+    display: flex;
+    justify-content: flex-end;
+}
+.form-add-button div{
+    display: flex;
+    color:black;
+    font-weight: 100;
+    border: 2px solid black;
+    padding:  2px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: white;
+}
+.form-add-button div:hover{
+    background-color: rgb(43, 108, 92);
+    color: white;
+    font-weight: bolder;
+}
+.form-add-button div i{
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    margin-left: 6px;
+}
+
+@media only screen and (max-width:1024px) {
+    .form-item{
+        width: 100%;
+    }
+    .form-item input{
+        width:70%;
+    }
+    .amount-input{
+        width:50% !important;
+    }
+    .category{
+        width:  80%;
+    }
+}
